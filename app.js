@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.send('hello world i am a chat bot');
 });
-
+console.log("hsdiahdisahdaihds");
 // for facebook to verify
 app.get('/webhook', function (req, res) {
     if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
