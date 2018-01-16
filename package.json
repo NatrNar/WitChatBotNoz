@@ -1,7 +1,7 @@
 {
-  "name": "witchat",
+  "name": "witchatbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "chatbot for kit-lab",
   "main": "app.js",
   "dependencies": {
     "express": "^4.16.2",
@@ -13,5 +13,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nathher Al Refai'i",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatrNar/WitChatBotNoz.git"
+  },
+  "keywords": [
+    "heroku",
+    "nodejs",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/NatrNar/WitChatBotNoz/issues"
+  },
+  "homepage": "https://github.com/NatrNar/WitChatBotNoz#readme"
 }
