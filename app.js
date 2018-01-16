@@ -26,10 +26,12 @@ app.get('/', function (req, res) {
 console.log("hsdiahdisahdaihds");
 // for facebook to verify
 app.get('/webhook', function (req, res) {
-    if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
+    /*if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
         res.send(req.query['hub.challenge']);
     }
-    res.send('Error, wrong token');
+    res.send('Error, wrong token');*/
+    const VERIFY_TOKEN = Config.FB_VERIFY_TOKEN;
+    console.log(VERIFY_TOKEN);
 });
 
 // to send messages to facebook
