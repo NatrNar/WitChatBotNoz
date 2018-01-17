@@ -29,7 +29,7 @@ function Answer(msg) {
 
 
         //console.log(msg);
-        let sym_array = [];
+        var sym_array = [];
         if (msg.hey && msg.hey[0].confidence > 0.7) hi++;
         if (msg.byee && msg.byee[0].confidence > 0.7) bye++;
         if (msg.thanx && msg.thanx[0].confidence > 0.7) thnx++;
