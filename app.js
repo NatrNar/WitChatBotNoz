@@ -23,12 +23,12 @@ app.use(bodyParser.json());
 
 // for facebook to verify
 app.get('/webhook', function (req, res) {
-    /*if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
+    if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
         res.send(req.query['hub.challenge']);
     }
-    res.send('Error, wrong token')*/
+    res.send('Error, wrong token');
 
-    let VERIFY_TOKEN = Config.FB_VERIFY_TOKEN;
+    /*let VERIFY_TOKEN = Config.FB_VERIFY_TOKEN;
 
     // Parse the query params
     let mode = req.query['hub.mode'];
@@ -50,17 +50,17 @@ app.get('/webhook', function (req, res) {
             console.log(403);
             res.sendStatus(403);
         }
-    }
+    }*/
 });
 
 // to send messages to facebook
 app.post('/webhook', function (req, res) {
-    //let entry = FB.getFirstMessagingEntry(req.body)
+    let entry = FB.getFirstMessagingEntry(req.body)
     // IS THE ENTRY A VALID MESSAGE?
 
 
     // Parse the request body from the POST
-    let body = req.body;
+    /*let body = req.body;
     console.log(body);
     // Check the webhook event is from a Page subscription
     if (body.object === 'page') {
@@ -93,16 +93,16 @@ app.post('/webhook', function (req, res) {
         console.log("404");
         res.sendStatus(404);
     }
-
+*/
 
     // SEND TO BOT FOR PROCESSING
-    /*Bot.client.message(entry.message.text).then((data) => {
+    Bot.client.message(entry.message.text).then((data) => {
         FB.fbMessage(entry.sender.id,Bot.Answer(data));
 
-    });*/
+    });
 
 
-    //res.sendStatus(200)
+    res.sendStatus(200)
 });
 
 
