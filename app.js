@@ -20,16 +20,37 @@ app.use(bodyParser.json());
 
 
 // index page
-app.get('/', function (req, res) {
-    res.send('hello world i am a chat bot');
-});
 
 // for facebook to verify
 app.get('/webhook', function (req, res) {
-    if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
+    /*if (req.query['hub.verify_token'] === Config.FB_VERIFY_TOKEN) {
         res.send(req.query['hub.challenge']);
     }
-    res.send('Error, wrong token')
+    res.send('Error, wrong token')*/
+
+    let VERIFY_TOKEN = Config.FB_VERIFY_TOKEN;
+
+    // Parse the query params
+    let mode = req.query['hub.mode'];
+    let token = req.query['hub.verify_token'];
+    let challenge = req.query['hub.challenge'];
+
+    // Checks if a token and mode is in the query string of the request
+    if (mode && token) {
+
+        // Checks the mode and token sent is correct
+        if (mode === 'subscribe' && token === VERIFY_TOKEN) {
+
+            // Responds with the challenge token from the request
+            console.log('WEBHOOK_VERIFIED');
+            res.status(200).send(challenge);
+
+        } else {
+            // Responds with '403 Forbidden' if verify tokens do not match
+            console.log(403);
+            res.sendStatus(403);
+        }
+    }
 });
 
 // to send messages to facebook
@@ -40,7 +61,7 @@ app.post('/webhook', function (req, res) {
 
     // Parse the request body from the POST
     let body = req.body;
-
+    console.log(body);
     // Check the webhook event is from a Page subscription
     if (body.object === 'page') {
 
@@ -69,6 +90,7 @@ app.post('/webhook', function (req, res) {
 
     } else {
         // Return a '404 Not Found' if event is not from a page subscription
+        console.log("404");
         res.sendStatus(404);
     }
 
