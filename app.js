@@ -56,6 +56,7 @@ app.get('/webhook', function (req, res) {
 
 // to send messages to facebook
 var sev_flag = 0;
+var sign_arr;
 app.post('/webhook', function (req, res) {
     let entry = FB.getFirstMessagingEntry(req.body);
     // IS THE ENTRY A VALID MESSAGE?
@@ -107,13 +108,16 @@ app.post('/webhook', function (req, res) {
                 Bot.client.message(entry.message.text).then((data) => {
                     let mmssg = Bot.Answer(data);
                     FB.fbMessage(entry.sender.id, mmssg);
-                    if (mmssg === 'Enter Your First Name : ')
+                    if (mmssg === 'Enter Your First Name : ') {
                         sev_flag = 1;
+                        sign_arr = new SignupBot.Sign_arr;
+                    }
+
 
                 });
             }
             else {
-                var ress = SignupBot.Sign_proc(entry.sender.id,entry.message.text.toLowerCase());
+                var ress = SignupBot.Sign_proc(entry.sender.id, entry.message.text.toLowerCase(),sign_arr);
                 if (ress === true) sev_flag = 0;
             }
 

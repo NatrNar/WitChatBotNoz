@@ -41,7 +41,7 @@ function sign_find_indx() {
         }
 }
 
-function sign_proc(sender, msg) {
+function sign_proc(sender, msg , sign_arr) {
     let index = sign_find_indx();
 
     switch (index) {
