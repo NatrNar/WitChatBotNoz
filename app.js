@@ -113,7 +113,7 @@ app.post('/webhook', function (req, res) {
                 });
             }
             else {
-                var ress = SignupBot.Sign_proc(entry.message.text.toLowerCase());
+                var ress = SignupBot.Sign_proc(entry.sender.id,entry.message.text.toLowerCase());
                 if (ress === true) sev_flag = 0;
             }
 
