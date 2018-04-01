@@ -42,7 +42,7 @@ function Answer(msg) {
                 if (msg.potential_Symptoms[i].confidence > 0.7)
                     sym_array.push(msg.potential_Symptoms[i].value.toLowerCase());
         }
-        if (msg.asking_sign && msg.asking_sign[0].confidence > 0.7) sign++;
+        if (msg.asking_signup && msg.asking_signup[0].confidence > 0.7) sign++;
 
     }
 
