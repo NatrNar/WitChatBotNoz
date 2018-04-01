@@ -6,6 +6,7 @@ var request = require('request');
 var Config = require('./config');
 var FB = require('./facebook');
 var Bot = require('./bot');
+var SignupBot = require('./bot_signup');
 
 
 // LETS MAKE A SERVER!
@@ -54,6 +55,7 @@ app.get('/webhook', function (req, res) {
 });
 
 // to send messages to facebook
+var sev_flag = 0;
 app.post('/webhook', function (req, res) {
     let entry = FB.getFirstMessagingEntry(req.body);
     // IS THE ENTRY A VALID MESSAGE?
@@ -101,10 +103,19 @@ app.post('/webhook', function (req, res) {
         */
 
             // SEND TO BOT FOR PROCESSING
-            Bot.client.message(entry.message.text).then((data) => {
-                FB.fbMessage(entry.sender.id, Bot.Answer(data));
+            if (sev_flag === 0) {
+                Bot.client.message(entry.message.text).then((data) => {
+                    let mmssg = Bot.Answer(data);
+                    FB.fbMessage(entry.sender.id, mmssg);
+                    if (mmssg === 'Enter Your First Name : ')
+                        sev_flag = 1;
 
-            });
+                });
+            }
+            else {
+                var ress = SignupBot.Sign_proc(entry.message.text.toLowerCase());
+                if (ress === true) sev_flag = 0;
+            }
 
         }
         res.sendStatus(200);

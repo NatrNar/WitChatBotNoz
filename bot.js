@@ -7,7 +7,7 @@ const client = getWit();
 
 
 function Answer(msg) {
-    let hi = 0, bye = 0, sym = 0, help = 0, thnx = 0, situ = 0;
+    let hi = 0, bye = 0, sym = 0, help = 0, thnx = 0, situ = 0, sign = 0;
     msg = JSON.parse(JSON.stringify(msg));
     msg = msg.entities;
     let res = '';
@@ -21,10 +21,10 @@ function Answer(msg) {
     let advise_array = ['I advise you to try this ', 'Try this please', 'That would help you', 'Maybe you need this ', 'You have to try this', "That's what you need", 'Here it is'];
     let food_array = ['fatigue', 'feeling tired', 'muscle pain', 'lack of concentration', 'dry skin', 'itchy skin', 'other skin issues', 'headaches', 'migraines', 'bloating', 'abdominal pain', 'food intolerance', 'changes in bowel habits'];
     let testo_array = ['fatigue', 'feeling tired', 'increase body fat', 'decrease muscle mass', 'depression', 'low sex drive', 'mental fatigue', 'lace of concentration'];
-    let understnd_array=["Oh I don't understand what you said , please say that in a better way",'What !!','What you said ??','Say it again please','Do you speak sibisain ?'];
+    let understnd_array = ["Oh I don't understand what you said , please say that in a better way", 'What !!', 'What you said ??', 'Say it again please', 'Do you speak sibisain ?'];
 
     if (!Object.keys(msg).length)
-       return  understnd_array[(Math.floor(Math.random() * understnd_array.length))];
+        return understnd_array[(Math.floor(Math.random() * understnd_array.length))];
     else {
 
 
@@ -42,6 +42,7 @@ function Answer(msg) {
                 if (msg.potential_Symptoms[i].confidence > 0.7)
                     sym_array.push(msg.potential_Symptoms[i].value.toLowerCase());
         }
+        if (msg.asking_sign && msg.asking_sign[0].confidence > 0.7) sign++;
 
     }
 
@@ -86,6 +87,9 @@ function Answer(msg) {
         res += (bye_array[randomNumber]) + '\n';
     }
 
+    if (sign > 0) {
+        res += 'Enter Your First Name : ';
+    }
 
     return res;
     //console.log(hi, bye, thnx, situ, help, sym);
