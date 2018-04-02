@@ -105,21 +105,23 @@ app.post('/webhook', function (req, res) {
 
             // SEND TO BOT FOR PROCESSING
 
-            FB.fbMessage(entry.sender.id, sender + " " + '@' + entry.message.text.toLowerCase() + '@');
-            let senderId=sign.qeueLook(entry.sender.id);
-            if (senderId> -1) {
-
-                sign.signQeue[senderId].signProc(sender, entry.message.text.toLowerCase());
+            //FB.fbMessage(entry.sender.id, sender + " " + '@' + entry.message.text.toLowerCase() + '@');
+            let senderId = sign.qeueLook(entry.sender.id);
+            if (senderId > -1) {
+                let signingup = sign.signQeue[senderId].signProc(sender, entry.message.text.toLowerCase());
+                if (signingup === true)
+                    sign.qeueDel(sender);
             }
 
             else {
                 Bot.client.message(entry.message.text.toLowerCase()).then((data) => {
                     let msg = Bot.Answer(data);
-                    FB.fbMessage(entry.sender.id, msg);
+                    FB.fbMessage(sender, msg);
                     if (msg === 'Signing-up') {
-                        sign.qeueAdd(entry.sender.id);
-                        FB.fbMessage(entry.sender.id, "What is your First Name ?");
-                        console.log(sign.signQeue);
+                        FB.fbMessage(sender, "To Exit Signing-up Form at anytime please tell me (end000)");
+                        FB.fbMessage(sender, "What is your First Name ?");
+                        sign.qeueAdd(sender);
+
                     }
                 });
             }
