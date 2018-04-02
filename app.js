@@ -104,7 +104,7 @@ app.post('/webhook', function (req, res) {
 
             // SEND TO BOT FOR PROCESSING
             if (sign.qeueLook(entry.sender.id) > -1)
-                sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.message.text.toLowerCase());
+                sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.sender.id,entry.message.text.toLowerCase());
 
             else {
                 Bot.client.message(entry.message.text.toLowerCase()).then((data) => {
