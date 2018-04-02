@@ -66,6 +66,7 @@ app.post('/webhook', function (req, res) {
         }
         else {
 
+            let sender = entry.sender.id;
             // Parse the request body from the POST
             /*let body = req.body;
             console.log(body);
@@ -103,11 +104,12 @@ app.post('/webhook', function (req, res) {
         */
 
             // SEND TO BOT FOR PROCESSING
-            let s = entry.sender.id;
-            FB.fbMessage(entry.sender.id, s + " " + '@' + entry.message.text.toLowerCase() + '@');
-            if (sign.qeueLook(entry.sender.id) > -1) {
 
-                sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.sender.id, entry.message.text.toLowerCase());
+            FB.fbMessage(entry.sender.id, sender + " " + '@' + entry.message.text.toLowerCase() + '@');
+            let senderId=sign.qeueLook(entry.sender.id);
+            if (senderId> -1) {
+
+                sign.signQeue[senderId].signProc(sender, entry.message.text.toLowerCase());
             }
 
             else {
