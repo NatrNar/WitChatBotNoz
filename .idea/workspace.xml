@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2df5546a-507d-41b9-a878-56677775d9b9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/bot_signup" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change beforePath="$PROJECT_DIR$/bot.js" afterPath="$PROJECT_DIR$/bot.js" />
@@ -19,13 +18,13 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="108" column="18" lean-forward="false" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+            <state relative-caret-position="359">
+              <caret line="112" column="44" lean-forward="false" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
               <folding>
                 <element signature="e#754#1507#0" expanded="false" />
                 <element signature="e#1962#3256#0" expanded="false" />
-                <element signature="e#3927#4563#0" expanded="false" />
-                <element signature="e#4565#4983#0" expanded="false" />
+                <element signature="e#3997#4633#0" expanded="false" />
+                <element signature="e#4635#5053#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -34,7 +33,7 @@
       <file leaf-file-name="bot.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="356">
               <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#search#0" expanded="false" />
@@ -64,6 +63,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sign</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -275,7 +279,7 @@
       <workItem from="1516134664412" duration="16975000" />
       <workItem from="1522507067378" duration="2832000" />
       <workItem from="1522598811757" duration="8545000" />
-      <workItem from="1522664184491" duration="3024000" />
+      <workItem from="1522664184491" duration="4065000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1516144761038</created>
@@ -382,11 +386,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522609981743</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ok">
+      <created>1522667251558</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1522667251558</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ok">
+      <created>1522667760118</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1522667760118</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31376000" />
+    <option name="totallyTimeSpent" value="32417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1376" height="728" extended-state="0" />
@@ -444,8 +462,8 @@
           <folding>
             <element signature="e#754#1507#0" expanded="false" />
             <element signature="e#1962#3256#0" expanded="false" />
-            <element signature="e#3927#4563#0" expanded="false" />
-            <element signature="e#4565#4983#0" expanded="false" />
+            <element signature="e#3997#4633#0" expanded="false" />
+            <element signature="e#4635#5053#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -476,8 +494,8 @@
           <folding>
             <element signature="e#754#1507#0" expanded="false" />
             <element signature="e#1962#3256#0" expanded="false" />
-            <element signature="e#3927#4563#0" expanded="false" />
-            <element signature="e#4565#4983#0" expanded="false" />
+            <element signature="e#3997#4633#0" expanded="false" />
+            <element signature="e#4635#5053#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -558,7 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="356">
           <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#search#0" expanded="false" />
@@ -568,13 +586,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="108" column="18" lean-forward="false" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        <state relative-caret-position="359">
+          <caret line="112" column="44" lean-forward="false" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
           <folding>
             <element signature="e#754#1507#0" expanded="false" />
             <element signature="e#1962#3256#0" expanded="false" />
-            <element signature="e#3927#4563#0" expanded="false" />
-            <element signature="e#4565#4983#0" expanded="false" />
+            <element signature="e#3997#4633#0" expanded="false" />
+            <element signature="e#4635#5053#0" expanded="false" />
           </folding>
         </state>
       </provider>

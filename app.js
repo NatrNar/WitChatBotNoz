@@ -110,7 +110,7 @@ app.post('/webhook', function (req, res) {
                 Bot.client.message(entry.message.text).then((data) => {
                     let msg = Bot.Answer(data);
                     FB.fbMessage(entry.sender.id, msg);
-                    if (msg === 'SIGNUP') {
+                    if (msg === 'Signing-up') {
                         sign.qeueAdd(entry.sender.id);
                         FB.fbMessage(entry.sender.id, "What is your First Name ?");
                         console.log(sign.signQeue);
