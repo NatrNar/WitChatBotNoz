@@ -35,7 +35,7 @@ function Answer(msg) {
         if (msg.thanx && msg.thanx[0].confidence > 0.7) thnx++;
         if (msg.wit_situation && msg.wit_situation[0].confidence > 0.7) situ++;
         if (msg.asking_help && msg.asking_help[0].confidence > 0.7) help++;
-        if (msg.ask_signup && msg.ask_signup[0].confidence > 0.7) sign++;
+        if (msg.asking_sing && msg.asking_sing[0].confidence > 0.7) sign++;
         if (msg.potential_Symptoms && msg.potential_Symptoms[0].confidence > 0.7) {
             sym++;
 
