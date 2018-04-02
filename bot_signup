@@ -181,6 +181,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
             let validZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/;
             if (validZip.test(msg)) {
                 this.qes_arr[6].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[7].qes);
                 break;
             }
             else {
