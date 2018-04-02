@@ -115,18 +115,16 @@ app.post('/webhook', function (req, res) {
 
             else {
                 Bot.client.message(entry.message.text.toLowerCase()).then((data) => {
-                    let msg = Bot.Answer(data);
-                    FB.fbMessage(sender, msg);
-                    if (msg === 'Signing-up') {
-                        FB.fbMessage(sender, "To Exit Signing-up Form at anytime please tell me (end000)");
-                        FB.fbMessage(sender, "What is your First Name ?");
-                        sign.qeueAdd(sender);
-
-                    }
+                    let msg = Bot.Answer(data, function () {
+                        FB.fbMessage(sender, msg);
+                        if (msg === 'Signing-up') {
+                            FB.fbMessage(sender, "To Exit Signing-up Form at anytime please tell me (end000)");
+                            FB.fbMessage(sender, "What is your First Name ?");
+                            sign.qeueAdd(sender);
+                        }
+                    });
                 });
             }
-
-
         }
         res.sendStatus(200);
     }

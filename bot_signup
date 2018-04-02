@@ -51,8 +51,10 @@ sign_obj.prototype.getIndx = function () {
 };
 sign_obj.prototype.signProc = function (sender, msg) {
     let index = this.getIndx();
-    if (msg === 'end000')
+    if (msg === 'end000') {
+        FB.fbMessage(sender,'Your Signing-up Operation Has been Stopped , You can do that later at anytime you want ');
         return true;
+    }
     switch (index) {
         case 0 : {
             this.qes_arr[0].ans = msg;
