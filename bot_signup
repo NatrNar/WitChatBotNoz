@@ -260,7 +260,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 10.0 && num < 150.0) {
                 this.qes_arr[12].ans = num;
-                FB.fbMessage(sender, this.qes_arr[11].qes);
+                FB.fbMessage(sender, this.qes_arr[13].qes);
                 break;
             }
             else {
