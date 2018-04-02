@@ -109,7 +109,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
 
 
         case 5 : {
-            let validDate = /^[0-9]{2}[\/]{1}[0-9]{2}[\/]{1}[0-9]{4}$/g;
+            let validDate = /^(0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\\d\\d$/;
             if (validDate.test(msg)) {
                 this.qes_arr[5].ans = msg;
                 FB.fbMessage(sender, this.qes_arr[6].qes);
