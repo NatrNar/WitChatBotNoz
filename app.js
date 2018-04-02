@@ -104,7 +104,7 @@ app.post('/webhook', function (req, res) {
 
             // SEND TO BOT FOR PROCESSING
             if (sign.qeueLook(entry.sender.id) > 0)
-                sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.message.text);
+                sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.message.text.toLowerCase());
 
             else {
                 Bot.client.message(entry.message.text).then((data) => {
@@ -113,6 +113,7 @@ app.post('/webhook', function (req, res) {
                     if (msg === 'SIGNUP') {
                         sign.qeueAdd(entry.sender.id);
                         FB.fbMessage(entry.sender.id, "What is your First Name ?");
+                        console.log(sign.signQeue);
                     }
                 });
             }
