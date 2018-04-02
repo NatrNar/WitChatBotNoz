@@ -107,7 +107,7 @@ app.post('/webhook', function (req, res) {
                 sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.message.text.toLowerCase());
 
             else {
-                Bot.client.message(entry.message.text).then((data) => {
+                Bot.client.message(entry.message.text.toLowerCase()).then((data) => {
                     let msg = Bot.Answer(data);
                     FB.fbMessage(entry.sender.id, msg);
                     if (msg === 'Signing-up') {
