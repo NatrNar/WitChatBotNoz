@@ -29,7 +29,7 @@ function sign_obj() {
         }
         ,
         {
-            qes: 'What is your Birth Date (DD/MM/YYYY) ?',
+            qes: 'What is your Birth Date (MM/DD/YYYY) ?',
             ans: null
         }
         ,
