@@ -6,7 +6,7 @@ var request = require('request');
 var Config = require('./config');
 var FB = require('./facebook');
 var Bot = require('./bot');
-
+var sign = require('./bot_signup');
 
 
 // LETS MAKE A SERVER!
@@ -103,10 +103,19 @@ app.post('/webhook', function (req, res) {
         */
 
             // SEND TO BOT FOR PROCESSING
+            if (sign.qeueLook(entry.sender.id) > 0)
+                sign.signQeue[qeueLook(entry.sender.id)].signProc(entry.message.text);
 
-            Bot.client.message(entry.message.text).then((data) => {
-                FB.fbMessage(entry.sender.id, Bot.Answer(data));
-            });
+            else {
+                Bot.client.message(entry.message.text).then((data) => {
+                    let msg = Bot.Answer(data);
+                    FB.fbMessage(entry.sender.id, msg);
+                    if (msg === 'SIGNUP') {
+                        sign.qeueAdd(entry.sender.id);
+                        FB.fbMessage(entry.sender.id, "What is your First Name ?");
+                    }
+                });
+            }
 
 
         }

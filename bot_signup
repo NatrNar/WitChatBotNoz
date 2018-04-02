@@ -1,0 +1,140 @@
+const FB = require('./facebook');
+
+function sign_obj() {
+    this.senderId = null;
+    this.qes_arr = [
+        {
+            qes: 'What is your First Name ?',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Last Name ?',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Email ?',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Confirm your Email ?',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Phone Number ?',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Birth Date (DD/MM/YYYY) ?',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Zip Code ?',
+            ans: null
+        }
+    ]
+}
+
+sign_obj.prototype.setSender = function (id) {
+    this.senderId = id;
+};
+sign_obj.prototype.getIndx = function () {
+    for (let i = 0; i < this.qes_arr.length; i++) {
+        if (this.qes_arr[i].ans === null)
+            return i;
+    }
+};
+sign_obj.prototype.signProc = function (sender, msg) {
+    let index = this.getIndx();
+    if (msg === 'end000')
+        return true;
+    switch (index) {
+        case 0 : {
+            this.qes_arr[0].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[1].qes);
+            break;
+        }
+
+        case 1 : {
+            this.qes_arr[1].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[2].qes);
+            break;
+        }
+
+        case 2 : {
+            this.qes_arr[2].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[3].qes);
+            break;
+        }
+
+        case 3 : {
+            if (msg === this.qes_arr[2].ans) {
+                this.qes_arr[3].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[4].qes);
+                break;
+            }
+            else {
+                this.qes_arr[2].ans = null;
+                FB.fbMessage(sender, "Email is not Match please try again !!!!");
+                FB.fbMessage(sender, this.qes_arr[2].qes);
+                break;
+            }
+        }
+        case 4 : {
+            this.qes_arr[4].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[5].qes);
+            break;
+        }
+
+        case 5 : {
+            this.qes_arr[5].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[6].qes);
+            break;
+        }
+
+        case 6 : {
+            this.qes_arr[6].ans = msg;
+            FB.fbMessage(sender, "Your Registration has been completed Successfully");
+            return true;
+        }
+    }
+
+    return false;
+
+};
+
+var signQeue = [];
+
+function qeueLook(sender) {
+    for (let i = 0; i < signQeue.length; i++)
+        if (signQeue[i].senderId === sender)
+            return i;
+}
+
+function qeueAdd(sender) {
+    let elem = new sign_obj();
+    elem.setSender(sender);
+    signQeue.push(elem);
+
+}
+
+function qeueDel(sender) {
+    let elem = qeueLook(sender);
+    if (elem > -1)
+        signQeue.splice(elem, 1);
+}
+
+module.exports = {
+
+    signQeue: signQeue,
+    qeueLook: qeueLook,
+    qeueAdd: qeueAdd,
+    qeueDel: qeueDel,
+    sign_obj: sign_obj
+
+};
