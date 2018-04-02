@@ -119,231 +119,194 @@ sign_obj.prototype.signProc = function (sender, msg) {
     }
     switch (index) {
         case 0 : {
-            this.qes_arr[0].ans = msg;
-            FB.fbMessage(sender, this.qes_arr[1].qes);
+            this.qes_arr[index].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             break;
         }
-
         case 1 : {
-            this.qes_arr[1].ans = msg;
-            FB.fbMessage(sender, this.qes_arr[2].qes);
+            this.qes_arr[index].ans = msg;
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             break;
         }
         case 2 : {
             let validMail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if (validMail.test(msg)) {
-                this.qes_arr[2].ans = msg;
-                FB.fbMessage(sender, this.qes_arr[3].qes);
-                break;
+                this.qes_arr[index].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Email ' + this.qes_arr[2].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Email ' + this.qes_arr[index].qes);
+            break;
         }
         case 3 : {
-            if (msg === this.qes_arr[2].ans) {
-                this.qes_arr[3].ans = msg;
-                FB.fbMessage(sender, this.qes_arr[4].qes);
-                break;
+            if (msg === this.qes_arr[index - 1].ans) {
+                this.qes_arr[index].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
             else {
-                this.qes_arr[2].ans = null;
-                FB.fbMessage(sender, 'Email is not Match please try again !!!! \n' + this.qes_arr[2].qes);
-                break;
+                this.qes_arr[index - 1].ans = null;
+                FB.fbMessage(sender, 'Email is not Match please try again !!!! \n' + this.qes_arr[index - 1].qes);
             }
+            break;
         }
         case 4 : {
             let validPhone = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
             if (validPhone.test(msg)) {
-                this.qes_arr[4].ans = msg;
-                FB.fbMessage(sender, this.qes_arr[5].qes);
-                break;
+                this.qes_arr[index].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Phone Number \n' + this.qes_arr[4].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Phone Number \n' + this.qes_arr[index].qes);
+            break;
         }
         case 5 : {
             let validDate = /^(0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\d\d$/;
             if (validDate.test(msg)) {
-                this.qes_arr[5].ans = msg;
-                FB.fbMessage(sender, this.qes_arr[6].qes);
-                break;
+                this.qes_arr[index].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid BirthDate \n' + this.qes_arr[5].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid BirthDate \n' + this.qes_arr[index].qes);
+            break;
+
         }
         case 6 : {
             let validZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/;
             if (validZip.test(msg)) {
-                this.qes_arr[6].ans = msg;
-                FB.fbMessage(sender, this.qes_arr[7].qes);
-                break;
+                this.qes_arr[index].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Zip Code \n' + this.qes_arr[6].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Zip Code \n' + this.qes_arr[index].qes);
+            break;
         }
         case 7 : {
             if (msg === 'yes' || msg === '1') {
-                this.qes_arr[7].ans = 'Me';
-                FB.fbMessage(sender, this.qes_arr[8].qes);
-                break;
+                this.qes_arr[index].ans = 'Me';
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else if (msg === 'no' || msg === '0') {
+            else if (msg === 'no' || msg === '0')
                 FB.fbMessage(sender, 'Your employer or health plan has provided you with a website link that ends in a special code. (Example: go.Lyfe-up.com/code or preventnow.com/code).\nPlease enter just the code.');
-                break;
-            }
             else {
-                this.qes_arr[7].ans = msg;
-                FB.fbMessage(sender, this.qes_arr[8].qes);
-                break;
+                this.qes_arr[index].ans = msg;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
+            break;
         }
         case 8 : {
             if (msg === 'm' || msg === 'male')
-                this.qes_arr[8].ans = 'male';
+                this.qes_arr[index].ans = 'male';
 
             else if (msg === 'f' || msg === 'female')
-                this.qes_arr[8].ans = 'female';
+                this.qes_arr[index].ans = 'female';
             else {
-                FB.fbMessage(sender, 'Please Enter a Valid Gender \n' + this.qes_arr[8].qes);
+                FB.fbMessage(sender, 'Please Enter a Valid Gender \n' + this.qes_arr[index].qes);
                 break;
             }
-            FB.fbMessage(sender, this.qes_arr[9].qes);
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             break;
-
-
         }
         case 9 : {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 3.0 && num < 8.0) {
-                this.qes_arr[9].ans = num;
-                FB.fbMessage(sender, this.qes_arr[10].qes);
-                break;
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Height \n' + this.qes_arr[9].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Height \n' + this.qes_arr[index].qes);
+            break;
         }
-        case 10 : {
+        case 10: {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 6.0 && num < 440.0) {
-                this.qes_arr[10].ans = num;
-                FB.fbMessage(sender, this.qes_arr[11].qes);
-                break;
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Weight \n' + this.qes_arr[10].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Weight \n' + this.qes_arr[index].qes);
+            break;
         }
-        case 11 : {
+        case 11: {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 10.0 && num < 150.0) {
-                this.qes_arr[11].ans = num;
-                FB.fbMessage(sender, this.qes_arr[12].qes);
-                break;
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Waist Circumference \n' + this.qes_arr[11].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Waist Circumference \n' + this.qes_arr[index].qes);
+            break;
         }
-        case 12 : {
+        case 12: {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 10.0 && num < 150.0) {
-                this.qes_arr[12].ans = num;
-                FB.fbMessage(sender, this.qes_arr[13].qes);
-                break;
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Hip Circumference \n' + this.qes_arr[12].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Hip Circumference \n' + this.qes_arr[index].qes);
+            break;
         }
-        case 13 : {
+        case 13: {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 0 && num < 10) {
-                this.qes_arr[13].ans = num;
-                FB.fbMessage(sender, this.qes_arr[14].qes);
-                break;
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[13].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
         }
-        case 14 : {
+        case 14: {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 0 && num < 4) {
-                this.qes_arr[14].ans = num;
+                this.qes_arr[index].ans = num;
                 if (num === 1)
-                    FB.fbMessage(sender, this.qes_arr[15].qes);
+                    FB.fbMessage(sender, this.qes_arr[index + 1].qes);
                 else
-                    FB.fbMessage(sender, this.qes_arr[16].qes);
+                    FB.fbMessage(sender, this.qes_arr[index + 2].qes);
                 break;
             }
             else {
-                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[14].qes);
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
                 break;
             }
         }
-        case 16 : {
+        case 16: {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 0 && num < 3) {
-                this.qes_arr[16].ans = num;
-                FB.fbMessage(sender, this.qes_arr[17].qes);
-                break;
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
             }
-            else {
-                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[16].qes);
-                break;
-            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
         }
         case 17: {
-            if (msg === 'yes' || msg === '1') {
-                this.qes_arr[17].ans = 1;
-                FB.fbMessage(sender, this.qes_arr[18].qes);
-                break;
-            }
-            else if (msg === 'no' || msg === '0') {
-                this.qes_arr[17].ans = 0;
-                FB.fbMessage(sender, this.qes_arr[18].qes);
-                break;
-            }
+            if (msg === 'yes' || msg === '1')
+                this.qes_arr[index].ans = 1;
+            else if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
             else {
-                FB.fbMessage(sender, 'Please Choose by Yes or No only \n' + this.qes_arr[17].qes);
+                FB.fbMessage(sender, 'Please Choose by Yes or No only \n' + this.qes_arr[index].qes);
                 break;
             }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
         }
         case 18: {
-            if (msg === 'yes' || msg === '1') {
-                this.qes_arr[18].ans = 1;
-                FB.fbMessage(sender, "Your Registration has been completed Successfully");
-                return true;
-            }
-            else if (msg === 'no' || msg === '0') {
-                this.qes_arr[18].ans = 0;
-                FB.fbMessage(sender, "Your Registration has been completed Successfully");
-                return true;
-            }
+            if (msg === 'yes' || msg === '1')
+                this.qes_arr[index].ans = 1;
+            else if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
             else {
-                FB.fbMessage(sender, 'Please Choose by Yes or No only \n' + this.qes_arr[18].qes);
+                FB.fbMessage(sender, 'Please Choose by Yes or No only \n' + this.qes_arr[index].qes);
                 break;
             }
+            FB.fbMessage(sender, "Your Registration has been completed Successfully");
+            return true;
         }
-
     }
-
     return false;
-
 };
 
 var signQeue = [];
