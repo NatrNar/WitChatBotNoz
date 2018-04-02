@@ -221,8 +221,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
 
         }
         case 9 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 3.0 && num < 8.0) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 3.0 && num < 8.0) {
                 this.qes_arr[9].ans = num;
                 FB.fbMessage(sender, this.qes_arr[10].qes);
                 break;
@@ -233,8 +233,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 10 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 6.0 && num < 440.0) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 6.0 && num < 440.0) {
                 this.qes_arr[10].ans = num;
                 FB.fbMessage(sender, this.qes_arr[11].qes);
                 break;
@@ -245,8 +245,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 11 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 10.0 && num < 150.0) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 10.0 && num < 150.0) {
                 this.qes_arr[11].ans = num;
                 FB.fbMessage(sender, this.qes_arr[12].qes);
                 break;
@@ -257,8 +257,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 12 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 10.0 && num < 150.0) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 10.0 && num < 150.0) {
                 this.qes_arr[12].ans = num;
                 FB.fbMessage(sender, this.qes_arr[11].qes);
                 break;
@@ -269,8 +269,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 13 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 0 && num < 10) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
                 this.qes_arr[13].ans = num;
                 FB.fbMessage(sender, this.qes_arr[14].qes);
                 break;
@@ -281,8 +281,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 14 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 0 && num < 4) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 4) {
                 this.qes_arr[14].ans = num;
                 if (num === 1)
                     FB.fbMessage(sender, this.qes_arr[15].qes);
@@ -296,8 +296,8 @@ sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 16 : {
-            let num = parseInt(msg);
-            if (isNaN(num) && num > 0 && num < 3) {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 3) {
                 this.qes_arr[16].ans = num;
                 FB.fbMessage(sender, this.qes_arr[17].qes);
                 break;
