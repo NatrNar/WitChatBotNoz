@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change beforePath="$PROJECT_DIR$/bot.js" afterPath="$PROJECT_DIR$/bot.js" />
-      <change beforePath="$PROJECT_DIR$/bot_signup" afterPath="$PROJECT_DIR$/bot_signup" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,23 +30,23 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="122" column="49" lean-forward="false" selection-start-line="122" selection-start-column="49" selection-end-line="122" selection-end-column="49" />
+            <state relative-caret-position="377">
+              <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
               <folding>
                 <element signature="e#754#1507#0" expanded="false" />
                 <element signature="e#2004#3298#0" expanded="false" />
-                <element signature="e#4391#5027#0" expanded="false" />
-                <element signature="e#5029#5447#0" expanded="false" />
+                <element signature="e#4330#4966#0" expanded="false" />
+                <element signature="e#4968#5386#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bot.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bot.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+            <state relative-caret-position="136">
+              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="n#!!block;n#search#0" expanded="false" />
               </folding>
@@ -55,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bot_signup" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bot_signup" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot_signup">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1112">
@@ -97,9 +96,9 @@
         <option value="$PROJECT_DIR$/Test.js" />
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/bot_signup.js" />
+        <option value="$PROJECT_DIR$/bot_signup" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/bot.js" />
-        <option value="$PROJECT_DIR$/bot_signup" />
       </list>
     </option>
   </component>
@@ -292,7 +291,7 @@
       <workItem from="1516134664412" duration="16975000" />
       <workItem from="1522507067378" duration="2832000" />
       <workItem from="1522598811757" duration="8545000" />
-      <workItem from="1522664184491" duration="9917000" />
+      <workItem from="1522664184491" duration="10333000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1516144761038</created>
@@ -476,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522673578768</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="ok">
+      <created>1522674263411</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1522674263411</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38269000" />
+    <option name="totallyTimeSpent" value="38685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1376" height="728" extended-state="0" />
@@ -497,7 +503,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26215807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26215807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,8 +544,8 @@
           <folding>
             <element signature="e#754#1507#0" expanded="false" />
             <element signature="e#2004#3298#0" expanded="false" />
-            <element signature="e#4391#5027#0" expanded="false" />
-            <element signature="e#5029#5447#0" expanded="false" />
+            <element signature="e#4330#4966#0" expanded="false" />
+            <element signature="e#4968#5386#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -570,8 +576,8 @@
           <folding>
             <element signature="e#754#1507#0" expanded="false" />
             <element signature="e#2004#3298#0" expanded="false" />
-            <element signature="e#4391#5027#0" expanded="false" />
-            <element signature="e#5029#5447#0" expanded="false" />
+            <element signature="e#4330#4966#0" expanded="false" />
+            <element signature="e#4968#5386#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -642,34 +648,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#search#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="122" column="49" lean-forward="false" selection-start-line="122" selection-start-column="49" selection-end-line="122" selection-end-column="49" />
-          <folding>
-            <element signature="e#754#1507#0" expanded="false" />
-            <element signature="e#2004#3298#0" expanded="false" />
-            <element signature="e#4391#5027#0" expanded="false" />
-            <element signature="e#5029#5447#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bot_signup">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1112">
           <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+          <folding>
+            <element signature="e#754#1507#0" expanded="false" />
+            <element signature="e#2004#3298#0" expanded="false" />
+            <element signature="e#4330#4966#0" expanded="false" />
+            <element signature="e#4968#5386#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#search#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

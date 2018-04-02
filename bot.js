@@ -6,7 +6,7 @@ const getWit = () => {
 const client = getWit();
 
 
-function Answer(msg,callback) {
+function Answer(msg) {
     let hi = 0, bye = 0, sym = 0, help = 0, thnx = 0, situ = 0, sign = 0;
     msg = JSON.parse(JSON.stringify(msg));
     msg = msg.entities;
@@ -90,12 +90,8 @@ function Answer(msg,callback) {
     if (sign > 0) {
         res = 'Signing-up';
     }
-
-    callback();
     return res;
     //console.log(hi, bye, thnx, situ, help, sym);
-
-
 }
 
 function search(arr1, arr2) {
