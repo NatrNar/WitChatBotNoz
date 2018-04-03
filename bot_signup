@@ -407,7 +407,7 @@ function multi_choice(msg, arr, index, sender, min, max) {
     if (msg === 'no' || msg === '0')
         arr[index].ans = 0;
     else {
-        let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+        let list = msg.split(/[ \-.:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
         for (let i = 0; i < list.length; i++) {
             let x = parseInt(list[i]);
             if (isNaN(x) || (!isNaN(x) && x > min && x < max)) {
