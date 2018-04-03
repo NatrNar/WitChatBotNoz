@@ -403,7 +403,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
     return false;
 };
 
-function multi_choice(min, max) {
+sign_obj.prototype.multi_choice = function (min, max) {
     if (msg === 'no' || msg === '0')
         this.qes_arr[index].ans = 0;
     else {
@@ -418,9 +418,9 @@ function multi_choice(min, max) {
         this.qes_arr[index].ans = list;
     }
     FB.fbMessage(sender, this.qes_arr[index + 1].qes);
-}
+};
 
-function one_choice(min, max) {
+sign_obj.prototype.one_choice = function (min, max) {
     let num = parseFloat(msg);
     if (!isNaN(num) && num > min && num < max) {
         this.qes_arr[index].ans = num;
@@ -428,9 +428,9 @@ function one_choice(min, max) {
     }
     else
         FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
-}
+};
 
-function y_or_no() {
+sign_obj.prototype.y_or_no = function () {
     if (msg === 'yes' || msg === '1')
         this.qes_arr[index].ans = true;
     else if (msg === 'no' || msg === '0')
@@ -440,7 +440,7 @@ function y_or_no() {
         return false;
     }
     FB.fbMessage(sender, this.qes_arr[index + 1].qes);
-}
+};
 
 var signQeue = [];
 
