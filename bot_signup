@@ -175,8 +175,6 @@ function sign_obj() {
             qes: 'One more thing... How did you hear about us ? \n(Choose the Number of the Answer only) \n\n 1-Email\n\n 2-Event at Work\n(e.g. health fair, biometric screening, etc.)\n\n 3-Employee website\n\n 4-Platform\n(e.g. Jiff, Evive, Welltok)\n\n 5-Coworker referral\n\n 6-Doctor referral\n\n 7-Mailer\n\n 8-Text message\n\n 9-Family member referral\n\n 10-Handout at work',
             ans: null
         }
-        ,
-
     ]
 }
 
