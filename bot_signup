@@ -99,6 +99,84 @@ function sign_obj() {
             qes: 'Have you had a baby weighing more than 9 lbs at birth ? (Yes|No)',
             ans: null
         }
+        ,
+        {
+            qes: 'Have you ever been tested for food allergies, (IgE immediate reaction), blood test or skin prick test? If YES, please pick the foods that you tested positive to ,or Choose No \n (Multi Choices , Just choose the Numbers of the Answers separated by `,`) \n (Ex : Fish,Milk)',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Would you like the foods that you have listed above to be removed from your Wellness Plan ? (Yes|No)',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Medical history ?\n(Multi Choices , Just choose the Numbers of the Answers separated by `,` if not Choose No) \n\n 1-Type I Diabetes\n\n 2-Type II Diabetes\n\n 3-Prediabetes\n(Blood test in the last year has shown you\'re at risk for diabetes)\n\n 4-Gestational Diabetes\n(Diagnosed during a previous pregnancy)\n\n 5-Metabolic Syndrome\n(Have been told by doctor that you have Metabolic Syndrome)\n\n 6-Low HDL\n(Your "Good Cholesterol" Is Too Low)\n\n 7-High LDL\n(Your "Bad Cholesterol" Is Too High)\n\n'
+            + ' 8-High Triglycerides\n(Blood Test Has Shown High Triglycerides)\n\n 9-Hypertension\n(High Blood Pressure)\n\n 10-Hypotension\n(Low Blood Pressure)\n\n 11-Poly cystic ovary syndrome\n\n 12-Heart diseases\n\n 13-Dyslipidemia\n\n 14-Kidney failure\n\n 15-Liver dysfunction\n\n 16-Cancer\n\n 17-Anorexia\n\n 18-Hypo/hyper thyroids\n\n 19-Osteoporosis\n\n 20-Anemia\n\n 21-Thalassemia\n\n 22-Kidney stones',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What is your Surgical history ? \n(Multi Choices , Just choose the Numbers of the Answers separated by `,` if not Choose No) \n\n 1-Appendectomy\n\n 2-Cholecystectomy\n\n 3-CABG/PTCA\n\n 4-Gastrectomy\n\n 5-Thyroidectomy',
+            ans: null
+        }
+        ,
+        {
+            qes: 'What are your Gastro-ontology problems ? \n(Multi Choices , Just choose the Numbers of the Answers separated by `,` if not Choose No) \n\n 1-Nausea/vomiting\n\n 2-Gastritis\n\n 3-Diarrhea\n\n 4-Constipation\n\n 5-Ulcer\n\n 6-Mouth/throat sores\n\n 7-Swallowing difficulties\n\n 8-Appetite problems\n\n 9-Gluten intolerance\n\n 10-Gluten intolerance',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Choose your Food preference \n(Multi Choices , Just choose the Numbers of the Answers separated by `,` if not Choose No) \n\n 1-Meat\n\n 2-Fish\n\n 3-Poultry\n\n 4-Turkey\n\n 5-Rice\n\n 6-Pasta\n\n 7-Eggs\n\n 8-Milk\n\n 9-Chocolate\n\n 10-Chips',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Choose your Fluid intake \n(Choose the Number of the Answer only) \n\n 1- 0.5L/day\n\n 2- 1L/day\n\n 3- 2L/day',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Do you Drink Alcohol ? \n(Choose the Number of the Answer only) \n\n 1-one cup per day\n\n 2-one cup per week\n\n 3-None',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Are you a Smoker ? (Yes|No)',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Do you follow any specific dietary practices ? \n(Multi Choices , Just choose the Numbers of the Answers separated by `,` if not Choose No) \n\n 1-Casein Free\n(avoids cow\'s milk, cheese and dairy products)\n\n 2-Gluten Free\n(avoids grains containing gluten)\n\n 3-Kosher\n(follows Jewish dietary guidelines)\n\n 4-No Red Meat\n(consumes poultry, fish and dairy products only)\n\n 5-Pescatarian\n(consumes fish, eggs and dairy products only (no meat, no poultry)) \n\n 6-Vegetarian\n(consumes dairy products and eggs only (no meat, no poultry, no fish))\n\n 7-Vegan\n(consumes plant foods only - no animal products at all)\n\n 8-Paleo diet\n(consumes meat, poultry, fish, nuts, fruits and vegetables only (no grains))',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Are you ready and able to Weigh yourself using your LyfeUp scale every day \n(Choose the Number of the Answer only) \n\n 1-Yes \n 2-No \n 3-Unsure',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Are you ready and able to Log in to the LyfeUp website or mobile app regularly \n(Choose the Number of the Answer only) \n\n 1-Yes \n 2-No \n 3-Unsure',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Are you ready and able to Track your food and physical activity regularly \n(Choose the Number of the Answer only) \n\n 1-Yes \n 2-No \n 3-Unsure',
+            ans: null
+        }
+        ,
+        {
+            qes: 'Are you ready and able to Complete an interactive online lesson once per week \n(Choose the Number of the Answer only) \n\n 1-Yes \n 2-No \n 3-Unsure',
+            ans: null
+        }
+        ,
+        {
+            qes: 'One more thing... How did you hear about us ? \n(Choose the Number of the Answer only) \n\n 1-Email\n\n 2-Event at Work\n(e.g. health fair, biometric screening, etc.)\n\n 3-Employee website\n\n 4-Platform\n(e.g. Jiff, Evive, Welltok)\n\n 5-Coworker referral\n\n 6-Doctor referral\n\n 7-Mailer\n\n 8-Text message\n\n 9-Family member referral\n\n 10-Handout at work',
+            ans: null
+        }
+        ,
+
     ]
 }
 
@@ -302,8 +380,199 @@ sign_obj.prototype.signProc = function (sender, msg) {
                 FB.fbMessage(sender, 'Please Choose by Yes or No only \n' + this.qes_arr[index].qes);
                 break;
             }
-            FB.fbMessage(sender, "Your Registration has been completed Successfully");
-            return true;
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 19: {
+            if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
+            else {
+                let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+                for (let i = 0; i < list.length; i++) {
+                    if (isNaN(parseInt(list[i]))) {
+                        FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + this.qes_arr[index].qes);
+                        return false;
+                    }
+                }
+                this.qes_arr[index].ans = list;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 20: {
+            if (msg === 'yes' || msg === '1')
+                this.qes_arr[index].ans = true;
+            else if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = false;
+            else {
+                FB.fbMessage(sender, 'Please Enter a Valid Value (Yes|No) \n' + this.qes_arr[index].qes);
+                break;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 21: {
+            if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
+            else {
+                let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+                for (let i = 0; i < list.length; i++) {
+                    if (isNaN(parseInt(list[i]))) {
+                        FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + this.qes_arr[index].qes);
+                        return false;
+                    }
+                }
+                this.qes_arr[index].ans = list;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 22: {
+            if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
+            else {
+                let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+                for (let i = 0; i < list.length; i++) {
+                    if (isNaN(parseInt(list[i]))) {
+                        FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + this.qes_arr[index].qes);
+                        return false;
+                    }
+                }
+                this.qes_arr[index].ans = list;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 23: {
+            if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
+            else {
+                let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+                for (let i = 0; i < list.length; i++) {
+                    if (isNaN(parseInt(list[i]))) {
+                        FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + this.qes_arr[index].qes);
+                        return false;
+                    }
+                }
+                this.qes_arr[index].ans = list;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 24: {
+            if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
+            else {
+                let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+                for (let i = 0; i < list.length; i++) {
+                    if (isNaN(parseInt(list[i]))) {
+                        FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + this.qes_arr[index].qes);
+                        return false;
+                    }
+                }
+                this.qes_arr[index].ans = list;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 25: {
+            let num = parseInt(msg);
+            if (!isNaN(num) && num > 0 && num < 3) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
+        }
+        case 26: {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
+        }
+        case 27: {
+            if (msg === 'yes' || msg === '1')
+                this.qes_arr[index].ans = true;
+            else if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = false;
+            else {
+                FB.fbMessage(sender, 'Please Enter a Valid Value (Yes|No) \n' + this.qes_arr[index].qes);
+                break;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 28: {
+            if (msg === 'no' || msg === '0')
+                this.qes_arr[index].ans = 0;
+            else {
+                let list = msg.split(/[ .:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
+                for (let i = 0; i < list.length; i++) {
+                    if (isNaN(parseInt(list[i]))) {
+                        FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + this.qes_arr[index].qes);
+                        return false;
+                    }
+                }
+                this.qes_arr[index].ans = list;
+            }
+            FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            break;
+        }
+        case 29: {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
+        }
+        case 30: {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
+        }
+        case 31: {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
+        }
+        case 32: {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[index + 1].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
+        }
+        case 33: {
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 10) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, 'Your Registration has been completed Successfully , Please check your Email for the Verification code');
+                return true;
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
+            break;
         }
     }
     return false;
