@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2df5546a-507d-41b9-a878-56677775d9b9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bot.js" afterPath="$PROJECT_DIR$/bot.js" />
       <change beforePath="$PROJECT_DIR$/bot_signup" afterPath="$PROJECT_DIR$/bot_signup" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
               <folding>
                 <element signature="e#754#1507#0" expanded="false" />
                 <element signature="e#2004#3298#0" expanded="false" />
@@ -41,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bot.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bot.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="164">
+              <caret line="23" column="184" lean-forward="false" selection-start-line="23" selection-start-column="184" selection-end-line="23" selection-end-column="184" />
               <folding>
                 <element signature="n#!!block;n#search#0" expanded="false" />
               </folding>
@@ -56,9 +57,10 @@
       <file leaf-file-name="bot_signup" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot_signup">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="412" column="53" lean-forward="false" selection-start-line="412" selection-start-column="53" selection-end-line="412" selection-end-column="53" />
               <folding>
+                <element signature="e#102#8306#0" expanded="false" />
                 <element signature="e#112#191#0" expanded="false" />
                 <element signature="e#210#288#0" expanded="false" />
                 <element signature="e#307#404#0" expanded="false" />
@@ -78,22 +80,22 @@
                 <element signature="e#2355#2805#0" expanded="false" />
                 <element signature="e#2824#2915#0" expanded="false" />
                 <element signature="e#2934#3052#0" expanded="false" />
-                <element signature="e#3739#3872#0" expanded="false" />
-                <element signature="e#3881#4411#0" expanded="false" />
-                <element signature="e#4420#4833#0" expanded="false" />
-                <element signature="e#4842#5296#0" expanded="false" />
-                <element signature="e#5305#5750#0" expanded="false" />
-                <element signature="e#5759#6105#0" expanded="false" />
-                <element signature="e#6114#6789#0" expanded="false" />
-                <element signature="e#6798#7200#0" expanded="false" />
-                <element signature="e#7209#7615#0" expanded="false" />
-                <element signature="e#7624#8046#0" expanded="false" />
-                <element signature="e#8055#8475#0" expanded="false" />
-                <element signature="e#8484#8887#0" expanded="false" />
-                <element signature="e#8896#9418#0" expanded="false" />
-                <element signature="e#9427#9829#0" expanded="false" />
-                <element signature="e#9838#10391#0" expanded="false" />
-                <element signature="e#10400#11027#0" expanded="false" />
+                <element signature="e#8355#8382#0" expanded="false" />
+                <element signature="e#8425#8550#0" expanded="false" />
+                <element signature="e#8844#8989#0" expanded="false" />
+                <element signature="e#8998#9143#0" expanded="false" />
+                <element signature="e#9152#9655#0" expanded="false" />
+                <element signature="e#9664#10086#0" expanded="false" />
+                <element signature="e#10095#10522#0" expanded="false" />
+                <element signature="e#10531#10950#0" expanded="false" />
+                <element signature="e#10959#11337#0" expanded="false" />
+                <element signature="e#11346#11979#0" expanded="false" />
+                <element signature="e#11988#12448#0" expanded="false" />
+                <element signature="n#!!block;n#one_choice#0" expanded="false" />
+                <element signature="n#!!block;n#y_or_no#0" expanded="false" />
+                <element signature="n#!!block;n#qeueLook#0" expanded="false" />
+                <element signature="n#!!block;n#qeueAdd#0" expanded="false" />
+                <element signature="n#!!block;n#qeueDel#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -114,7 +116,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sign</find>
+      <find>isNaN</find>
+      <find>msg,</find>
+      <find>multi_choice(</find>
     </findStrings>
+    <replaceStrings>
+      <replace>!isNaN</replace>
+      <replace>multi_choice(msg,</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,8 +141,8 @@
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/bot_signup.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/bot.js" />
         <option value="$PROJECT_DIR$/bot_signup" />
+        <option value="$PROJECT_DIR$/bot.js" />
       </list>
     </option>
   </component>
@@ -178,7 +187,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,8 +202,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,7 +335,8 @@
       <workItem from="1516134664412" duration="16975000" />
       <workItem from="1522507067378" duration="2832000" />
       <workItem from="1522598811757" duration="8545000" />
-      <workItem from="1522664184491" duration="17209000" />
+      <workItem from="1522664184491" duration="21037000" />
+      <workItem from="1522749006443" duration="10631000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1516144761038</created>
@@ -552,11 +562,116 @@
       <option name="project" value="LOCAL" />
       <updated>1522677160043</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="ok">
+      <created>1522682751009</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1522682751009</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ok">
+      <created>1522682958975</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1522682958975</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ok">
+      <created>1522683834151</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1522683834151</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ok">
+      <created>1522684197236</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1522684197236</updated>
+    </task>
+    <task id="LOCAL-00037" summary="ok">
+      <created>1522684600421</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1522684600421</updated>
+    </task>
+    <task id="LOCAL-00038" summary="ok">
+      <created>1522693643660</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1522693643660</updated>
+    </task>
+    <task id="LOCAL-00039" summary="ok">
+      <created>1522753623984</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1522753623984</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ok">
+      <created>1522756230094</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1522756230094</updated>
+    </task>
+    <task id="LOCAL-00041" summary="ok">
+      <created>1522757319967</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1522757319967</updated>
+    </task>
+    <task id="LOCAL-00042" summary="ok">
+      <created>1522757467237</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1522757467237</updated>
+    </task>
+    <task id="LOCAL-00043" summary="ok">
+      <created>1522757849965</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1522757849965</updated>
+    </task>
+    <task id="LOCAL-00044" summary="ok">
+      <created>1522758367656</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1522758367656</updated>
+    </task>
+    <task id="LOCAL-00045" summary="ok">
+      <created>1522758720425</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1522758720425</updated>
+    </task>
+    <task id="LOCAL-00046" summary="ok">
+      <created>1522760126176</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1522760126176</updated>
+    </task>
+    <task id="LOCAL-00047" summary="ok">
+      <created>1522760558834</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1522760558834</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45561000" />
+    <option name="totallyTimeSpent" value="60020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1376" height="728" extended-state="0" />
@@ -567,14 +682,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26215807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26595744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -587,7 +703,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +717,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -681,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="757" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,14 +816,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebook.js">
+    <entry file="file://$PROJECT_DIR$/bot_signup.js" />
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="123" column="21" lean-forward="false" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+          <folding>
+            <element signature="e#754#1507#0" expanded="false" />
+            <element signature="e#2004#3298#0" expanded="false" />
+            <element signature="e#4330#4966#0" expanded="false" />
+            <element signature="e#4968#5386#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bot_signup.js" />
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -718,21 +838,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bot.js">
+    <entry file="file://$PROJECT_DIR$/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#search#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bot_signup">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="412" column="53" lean-forward="false" selection-start-line="412" selection-start-column="53" selection-end-line="412" selection-end-column="53" />
           <folding>
+            <element signature="e#102#8306#0" expanded="false" />
             <element signature="e#112#191#0" expanded="false" />
             <element signature="e#210#288#0" expanded="false" />
             <element signature="e#307#404#0" expanded="false" />
@@ -752,35 +871,32 @@
             <element signature="e#2355#2805#0" expanded="false" />
             <element signature="e#2824#2915#0" expanded="false" />
             <element signature="e#2934#3052#0" expanded="false" />
-            <element signature="e#3739#3872#0" expanded="false" />
-            <element signature="e#3881#4411#0" expanded="false" />
-            <element signature="e#4420#4833#0" expanded="false" />
-            <element signature="e#4842#5296#0" expanded="false" />
-            <element signature="e#5305#5750#0" expanded="false" />
-            <element signature="e#5759#6105#0" expanded="false" />
-            <element signature="e#6114#6789#0" expanded="false" />
-            <element signature="e#6798#7200#0" expanded="false" />
-            <element signature="e#7209#7615#0" expanded="false" />
-            <element signature="e#7624#8046#0" expanded="false" />
-            <element signature="e#8055#8475#0" expanded="false" />
-            <element signature="e#8484#8887#0" expanded="false" />
-            <element signature="e#8896#9418#0" expanded="false" />
-            <element signature="e#9427#9829#0" expanded="false" />
-            <element signature="e#9838#10391#0" expanded="false" />
-            <element signature="e#10400#11027#0" expanded="false" />
+            <element signature="e#8355#8382#0" expanded="false" />
+            <element signature="e#8425#8550#0" expanded="false" />
+            <element signature="e#8844#8989#0" expanded="false" />
+            <element signature="e#8998#9143#0" expanded="false" />
+            <element signature="e#9152#9655#0" expanded="false" />
+            <element signature="e#9664#10086#0" expanded="false" />
+            <element signature="e#10095#10522#0" expanded="false" />
+            <element signature="e#10531#10950#0" expanded="false" />
+            <element signature="e#10959#11337#0" expanded="false" />
+            <element signature="e#11346#11979#0" expanded="false" />
+            <element signature="e#11988#12448#0" expanded="false" />
+            <element signature="n#!!block;n#one_choice#0" expanded="false" />
+            <element signature="n#!!block;n#y_or_no#0" expanded="false" />
+            <element signature="n#!!block;n#qeueLook#0" expanded="false" />
+            <element signature="n#!!block;n#qeueAdd#0" expanded="false" />
+            <element signature="n#!!block;n#qeueDel#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/bot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+        <state relative-caret-position="164">
+          <caret line="23" column="184" lean-forward="false" selection-start-line="23" selection-start-column="184" selection-end-line="23" selection-end-column="184" />
           <folding>
-            <element signature="e#754#1507#0" expanded="false" />
-            <element signature="e#2004#3298#0" expanded="false" />
-            <element signature="e#4330#4966#0" expanded="false" />
-            <element signature="e#4968#5386#0" expanded="false" />
+            <element signature="n#!!block;n#search#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -21,7 +21,7 @@ function Answer(msg) {
     let advise_array = ['I advise you to try this ', 'Try this please', 'That would help you', 'Maybe you need this ', 'You have to try this', "That's what you need", 'Here it is'];
     let food_array = ['fatigue', 'feeling tired', 'muscle pain', 'lack of concentration', 'dry skin', 'itchy skin', 'other skin issues', 'headaches', 'migraines', 'bloating', 'abdominal pain', 'food intolerance', 'changes in bowel habits'];
     let testo_array = ['fatigue', 'feeling tired', 'increase body fat', 'decrease muscle mass', 'depression', 'low sex drive', 'mental fatigue', 'lace of concentration'];
-    let understnd_array = ["Oh I don't understand what you said , please say that in a better way", 'What !!', 'What you said ??', 'Say it again please', 'Do you speak sibisain ?'];
+    let understnd_array = ["Oh I don't understand what you said , please say that in a better way", 'What !!', 'What you said ??', 'Say it again please', 'Do you speak a magic language ?'];
 
     if (!Object.keys(msg).length)
         return understnd_array[(Math.floor(Math.random() * understnd_array.length))];
