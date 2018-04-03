@@ -172,3 +172,17 @@ app.post('/webhook', function (req, res) {
     // Sends the response message
     callSendAPI(sender_psid, response);
 }*/
+
+
+var builder = require('botbuilder');
+
+var connector = new builder.ChatConnector({
+    appId: process.env.MicrosoftAppId || Config.SKYPE_APP_ID,
+    appPassword: process.env.MicrosoftAppPassword || Config.SKYPE_APP_PASSWORD
+});
+
+app.post('/Skype', connector.listen());
+
+var bot = new builder.UniversalBot(connector, function (session) {
+    session.send("You said: %s", session.message.text);
+});

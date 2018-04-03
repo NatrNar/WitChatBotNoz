@@ -4,9 +4,11 @@
   "description": "chatbot for kit-lab",
   "main": "app.js",
   "dependencies": {
+    "botbuilder": "^3.14.1",
     "express": "^4.16.2",
     "node-wit": "^4.3.0",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "restify": "^7.1.0"
   },
   "devDependencies": {},
   "scripts": {
