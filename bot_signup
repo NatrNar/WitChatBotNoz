@@ -332,7 +332,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
             break;
         }
         case 19: {
-            multi_choice(msg, this.qes_arr, index, sender, 0, 8);
+            multi_choice(msg, this.qes_arr, index, sender, 0, 7);
             break;
         }
         case 20: {
@@ -340,19 +340,19 @@ sign_obj.prototype.signProc = function (sender, msg) {
             break;
         }
         case 21: {
-            multi_choice(msg, this.qes_arr, index, sender, 0, 23);
+            multi_choice(msg, this.qes_arr, index, sender, 0, 22);
             break;
         }
         case 22: {
-            multi_choice(msg, this.qes_arr, index, sender, 0, 6);
+            multi_choice(msg, this.qes_arr, index, sender, 0, 5);
             break;
         }
         case 23: {
-            multi_choice(msg, this.qes_arr, index, sender, 0, 11);
+            multi_choice(msg, this.qes_arr, index, sender, 0, 10);
             break;
         }
         case 24: {
-            multi_choice(msg, this.qes_arr, index, sender, 0, 11);
+            multi_choice(msg, this.qes_arr, index, sender, 0, 10);
             break;
         }
         case 25: {
@@ -368,7 +368,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
             break;
         }
         case 28: {
-            multi_choice(msg, this.qes_arr, index, sender, 0, 9);
+            multi_choice(msg, this.qes_arr, index, sender, 0, 8);
             break;
         }
         case 29: {
