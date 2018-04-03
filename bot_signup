@@ -410,7 +410,7 @@ function multi_choice(msg, arr, index, sender, min, max) {
         let list = msg.split(/[ \-.:;?!~,`"&|()<>{}\[\]\r\n/\\]+/);
         for (let i = 0; i < list.length; i++) {
             let x = parseInt(list[i]);
-            if (isNaN(x) || (!isNaN(x) && x > min && x < max)) {
+            if (isNaN(x) || (!isNaN(x) && x < min && x > max)) {
                 FB.fbMessage(sender, 'Please Enter Valid Choices Separated by `,` \n' + arr[index].qes);
                 return false;
             }
