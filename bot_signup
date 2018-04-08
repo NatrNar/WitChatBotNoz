@@ -389,7 +389,7 @@ sign_obj.prototype.signProc = function (sender, msg) {
             if (!isNaN(num) && num > 0 && num < 10) {
                 this.qes_arr[index].ans = num;
                 FB.fbMessage(sender, 'Your Registration has been completed Successfully , Please check your Email for the Verification code', function () {
-                    FB.fbMessage(sender, `${this.qes_arr}`, function () {
+                    FB.fbMessage(sender, ''+this.qes_arr, function () {
                         return true;
                     });
 
