@@ -270,9 +270,11 @@ sign_obj.prototype.signProc = function (sender, msg) {
             break;
         }
         case 8 : {
-            if (msg === 'm' || msg === 'male')
+            if (msg === 'm' || msg === 'male') {
                 this.qes_arr[index].ans = 'male';
-
+                this.qes_arr[17].ans = false;
+                this.qes_arr[18].ans = false;
+            }
             else if (msg === 'f' || msg === 'female')
                 this.qes_arr[index].ans = 'female';
             else {
