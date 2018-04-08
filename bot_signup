@@ -388,11 +388,15 @@ sign_obj.prototype.signProc = function (sender, msg) {
             let num = parseFloat(msg);
             if (!isNaN(num) && num > 0 && num < 10) {
                 this.qes_arr[index].ans = num;
-                FB.fbMessage(sender, 'Your Registration has been completed Successfully , Please check your Email for the Verification code');
-                let noz = JSON.stringify(this);
-                noz = noz.toString();
-                FB.fbMessage(sender, noz);
-                return true;
+                FB.fbMessage(sender, 'Your Registration has been completed Successfully , Please check your Email for the Verification code', function () {
+                    let noz = JSON.stringify(this);
+                    noz = noz.toString();
+                    FB.fbMessage(sender, noz, function () {
+                        return true;
+                    });
+
+                });
+
             }
             else
                 FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
