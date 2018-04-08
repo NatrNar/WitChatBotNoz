@@ -381,20 +381,16 @@ sign_obj.prototype.signProc = function (sender, msg) {
             break;
         }
         case 32: {
-            one_choice(msg, this.qes_arr, index, sender, 0, 11);
+            one_choice(msg, this.qes_arr, index, sender, 0, 14);
             break;
         }
         case 33: {
             let num = parseFloat(msg);
-            if (!isNaN(num) && num > 0 && num < 10) {
+            if (!isNaN(num) && num > 0 && num < 11) {
                 this.qes_arr[index].ans = num;
                 FB.fbMessage(sender, 'Your Registration has been completed Successfully , Please check your Email for the Verification code', function () {
-                    FB.fbMessage(sender, ''+this.qes_arr, function () {
-                        return true;
-                    });
-
+                    return true;
                 });
-
             }
             else
                 FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
