@@ -7,7 +7,7 @@ const client = getWit();
 
 
 function Answer(msg) {
-    let hi = 0, bye = 0, sym = 0, help = 0, thnx = 0, situ = 0, sign = 0;
+    let hi = 0, bye = 0, sym = 0, help = 0, thnx = 0, situ = 0, sign = 0, login = 0;
     msg = JSON.parse(JSON.stringify(msg));
     msg = msg.entities;
     let res = '';
@@ -17,7 +17,7 @@ function Answer(msg) {
     let sit_array = ['Oh Thanks Im fine ', 'I am Great', 'Super', 'I am Fine ', 'Great!!!', 'Cool !', 'Well', 'so nice'];
     let thx_array = ['Thanx', 'Thank you very much', 'wow thanks', 'Thanks', 'you welcome', 'You Make me Happy'];
     let help_array = ['Yes', 'Sure', 'Yeah , Sure I will help you', 'Why not ?', 'Yes,I am here for helping', 'Sure,Im here for Serving', 'What do you feel ? ', 'Tell me What are your potential_Symptoms ?'];
-    let links_array = ['https://www.everlywell.come/products/food-sensitiviy/', 'https://www.everlywell.come/products/testosterone-test/'];
+    let links_array = ['https://www.everlywell.come/products/food-sensitiviy/', 'https://www.everlywell.come/products/testosterone-test/', 'https://secure.everlywell.com/login'];
     let advise_array = ['I advise you to try this ', 'Try this please', 'That would help you', 'Maybe you need this ', 'You have to try this', "That's what you need", 'Here it is'];
     let food_array = ['fatigue', 'feeling tired', 'muscle pain', 'lack of concentration', 'dry skin', 'itchy skin', 'other skin issues', 'headaches', 'migraines', 'bloating', 'abdominal pain', 'food intolerance', 'changes in bowel habits'];
     let testo_array = ['fatigue', 'feeling tired', 'increase body fat', 'decrease muscle mass', 'depression', 'low sex drive', 'mental fatigue', 'lace of concentration'];
@@ -36,6 +36,7 @@ function Answer(msg) {
         if (msg.wit_situation && msg.wit_situation[0].confidence > 0.7) situ++;
         if (msg.asking_help && msg.asking_help[0].confidence > 0.7) help++;
         if (msg.asking_signup && msg.asking_signup[0].confidence > 0.7) sign++;
+        if (msg.asking_login && msg.asking_login[0].confidence > 0.7) login++;
         if (msg.potential_Symptoms && msg.potential_Symptoms[0].confidence > 0.7) {
             sym++;
 
@@ -89,6 +90,9 @@ function Answer(msg) {
 
     if (sign > 0) {
         res = 'Signing-up';
+    }
+    if (login > 0) {
+        res += (links_array[2]) + '\n';
     }
     return res;
     //console.log(hi, bye, thnx, situ, help, sym);
