@@ -95,7 +95,7 @@ function Answer(msg) {
         res = 'Signing-up';
     }
     if (login > 0) {
-        res += (links_array[2]) + '\n';
+        res += links_array[2] + '\n';
     }
     return res;
     //console.log(hi, bye, thnx, situ, help, sym);
