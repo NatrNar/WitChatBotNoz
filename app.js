@@ -1,16 +1,15 @@
 'use strict';
 
-var express = require('express');
-var bodyParser = require('body-parser');
-var request = require('request');
-var Config = require('./config');
-var FB = require('./facebook');
-var Bot = require('./bot');
-var sign = require('./bot_signup');
+const express = require('express');
+const bodyParser = require('body-parser');
+const Config = require('./config');
+const FB = require('./facebook');
+const Bot = require('./bot');
+const sign = require('./bot_signup');
 
 
 // LETS MAKE A SERVER!
-var app = express();
+const app = express();
 app.set('port', (process.env.PORT) || 5000);
 // SPIN UP SERVER
 app.listen(app.get('port'), function () {
