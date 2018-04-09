@@ -5,12 +5,15 @@ const getWit = () => {
 };
 const client = getWit();
 
-
+/**
+ * @return {string}
+ */
 function Answer(msg) {
     let hi = 0, bye = 0, sym = 0, help = 0, thnx = 0, situ = 0, sign = 0, login = 0;
     msg = JSON.parse(JSON.stringify(msg));
     msg = msg.entities;
     let res = '';
+
 
     let hi_array = ['Heyy', 'Hello', 'Hi', 'Hey', 'Hola', 'nice to meet you', 'welcome', 'I am happy to meet you'];
     let bye_array = ['GoodBye', 'byee', 'bye', 'see ya', 'see you soon', 'I am glad to know you ', 'see you again'];
@@ -22,14 +25,14 @@ function Answer(msg) {
     let food_array = ['fatigue', 'feeling tired', 'muscle pain', 'lack of concentration', 'dry skin', 'itchy skin', 'other skin issues', 'headaches', 'migraines', 'bloating', 'abdominal pain', 'food intolerance', 'changes in bowel habits'];
     let testo_array = ['fatigue', 'feeling tired', 'increase body fat', 'decrease muscle mass', 'depression', 'low sex drive', 'mental fatigue', 'lace of concentration'];
     let understnd_array = ["Oh I don't understand what you said , please say that in a better way", 'What !!', 'What you said ??', 'Say it again please', 'Do you speak a magic language ?'];
-
+    let sym_array = [];
     if (!Object.keys(msg).length)
         return understnd_array[(Math.floor(Math.random() * understnd_array.length))];
     else {
 
 
         //console.log(msg);
-        var sym_array = [];
+
         if (msg.hey && msg.hey[0].confidence > 0.7) hi++;
         if (msg.byee && msg.byee[0].confidence > 0.7) bye++;
         if (msg.thanx && msg.thanx[0].confidence > 0.7) thnx++;
@@ -103,7 +106,7 @@ function search(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
         for (let j = 0; j < arr2.length; j++) {
 
-            if (arr1[i] == arr2[j])
+            if (arr1[i] === arr2[j])
                 res++;
         }
     }
