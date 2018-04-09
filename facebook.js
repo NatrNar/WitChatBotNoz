@@ -17,7 +17,6 @@ const fbReq = request.defaults({
     }
 });
 
-
 const fbMessage = (recipientId, msg, cb) => {
     const opts = {
         form: {
