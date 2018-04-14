@@ -270,8 +270,11 @@ Sign_obj.prototype.signProc = function (sender, msg) {
             break;
         }
         case 8 : {
-            if (msg === 'm' || msg === 'male')
+            if (msg === 'm' || msg === 'male') {
                 this.qes_arr[index].ans = 'male';
+                this.qes_arr[17].ans = false;
+                this.qes_arr[18].ans = false;
+            }
             else if (msg === 'f' || msg === 'female')
                 this.qes_arr[index].ans = 'female';
             else {
@@ -317,7 +320,13 @@ Sign_obj.prototype.signProc = function (sender, msg) {
             }
         }
         case 16: {
-            one_choice(msg, this.qes_arr, index, sender, 0, 3);
+            let num = parseFloat(msg);
+            if (!isNaN(num) && num > 0 && num < 3) {
+                this.qes_arr[index].ans = num;
+                FB.fbMessage(sender, this.qes_arr[this.getIndx()].qes);
+            }
+            else
+                FB.fbMessage(sender, 'Please Enter a Valid Choice \n' + this.qes_arr[index].qes);
             break;
         }
         case 17: {
